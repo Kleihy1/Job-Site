@@ -1,0 +1,79 @@
+<!--Chenyi-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TechHire.com - Current Available Positions</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="resume.css">
+        <script type="text/javascript" src="external.js"></script>
+    </head>
+
+    <body>
+        <fieldset class="fieldheader">
+            <div>
+        <b>
+            <h1>TechHire.com</h1>
+            <button type="logout" value="logout" id="logout1" onclick="return results();"><h3>my profile</h3></button>
+            <label class="header"><h3>search: </label><input name="searchenterjobtitlecompany" type="text" id="seachjob"/></h3>
+            <label class="header"><h3>enter city / state: </label><input name="searchentercitestate" type="text" id="seachjob2"/></h3>
+            <button type="logout" value="logout" id="logout1" onclick="return results();"><h3>Log out</h3></button>
+        </b>
+            </div>
+            
+        </fieldset>
+
+
+        <fieldest>
+        <div id = "header">
+            <h2><b>Introduce Yourself</b></h2>
+        </div>
+        </fieldest>
+
+        <!--Don't know whether should put a link to submit picture.-->
+
+        <div class = "picture">
+            <label ><b> Profile Picture: </b></label><br>
+        </div>
+
+        <fieldest class = "content">
+        <label><b>First name: </b></label><input required="required" type="text" id="fname" name="fname"/><br>
+        <lable><b>Last name: </b></lable><input  required="required" type="text" id="lname" name="lname"/><br>
+        <label><b>D.O.B: </b></label><input  required="required" type="date" id="DOB" name="DOB"/><br>
+        <label><b>Occupation: </b></label><input  required="required" type="text" id="Occupation" name="Occupation"/><br>
+        <label><b>Experience:</b></label><input id= "experence"></id><br>
+        <textarea cols = "100" rows = "15" ></textarea><br>
+        <label><b>Education:</b></label><input id= "education"></id><br>
+        <textarea cols = "100" rows = "15" ></textarea><br>
+        <input type="submit" value="+add school" id ="add" onclick="return getPosition()" /><br>
+        <legend class="skills">Skills</legend>
+            <input type="checkbox" name="skills" value="HTML"  />HTML
+            <input type="checkbox" name="skills" value="CSS" />CSS
+            <input type="checkbox" name="skills" value="JavaScript" />JavaScript
+            <input type="checkbox" name="skills" value="Java" />Java
+            <input type="checkbox" name="skills" value="Python" />Python
+            <input type="checkbox" name="skills" value="React" />React
+            <input type="checkbox" name="skills" value="Node" />Node
+            <input type="checkbox" name="skills" value="Microsoft" />Microsoft<br>
+            <input type="checkbox" name="skills" value="others" />Others
+               <textarea cols = "100" rows = "10" ></textarea><br>
+        <label><b>Awards:</b></label><input id= "awards"></id><br>
+        <textarea cols = "100" rows = "10" ></textarea><br>
+
+
+  <!--Here should be a link or ...? I'm not sure about this!I just assume here is a link to let job seekers sumbmit there resume!-->
+        <a href = "/submitresume.html">Resume</a><br><br>
+    
+       </fieldest>  
+       <input type="submit" value="Submit" id ="button">
+       
+    </body>
+<script>
+    var position;
+	
+    function getCaretPosition() {
+        var ctlTextArea = document.getElementById('textArea');
+        position = ctlTextArea.selectionStart;
+        return position;
+    }
+
+</script>
