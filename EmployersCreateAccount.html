@@ -1,0 +1,40 @@
+<!--Chenyi-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title><h1>TechHire.com</h1> </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="nologin.css">
+        <h1>TechHire.com</h1> 
+        <p>Already have an account?</p>
+        <form id="payment" method="GET" action="LogIn.html" name="LogIn"></form>
+        <input type="submit" name="Log In" value="Log In"  />
+
+    
+    </head>
+
+    <body>
+        <fieldset class="c">
+            <legend class="b">Sign up as a Employer</legend>
+             <label>Email Address (use your work email)</label><input  required="required" type="text" id="email" name="email"/><br>
+            <label>Password</label><input  required="required" type="password" id="password" name="password"/><br>
+            <label>Password(verify)</label><input  required="required" type="password" id="verify"  name="verify" onchange='checkpassword();'/><br>
+                    
+        
+        </fieldset>
+            <input type="submit" name="Sign Up" value="Sign Up" onclick="return checkpassword()" />
+    </body>
+
+    <script>
+            function checkpassword(){
+
+                if (document.getElementById('password').value != document.getElementById('verify').value) {
+        
+                alert('ensure passwords match');
+        
+                return false;
+        
+                }  
+        
+        }
+        </script>
