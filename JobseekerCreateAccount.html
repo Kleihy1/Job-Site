@@ -1,29 +1,77 @@
-<!--Chenyi-->
+<!--Chenyi did HTML
+Linh edited HTML + Bootstrap-->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title><h1>TechHire.com</h1> </title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="nologin.css">
-        <h1>TechHire.com</h1> 
-        <p>Already have an account?</p>
-        <form id="payment" method="GET" action="LogIn.html" name="LogIn"></form>
-        <input type="submit" name="Log In" value="Log In"  />
 
-    
+
+    <head>
+        <title>TechHire.com</title>
+
+         <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style1.css" />
     </head>
 
     <body>
-            <legend class="b">Sign up</legend>
-            <label>First name:</label><input required="required" type="text" id="billingname" name="billingname"/><br>
-            <lable>Lasr name:</lable><input  required="required" type="text" id="billingname1" name="billingname1"/><br>
-           <label>Email Address</label><input  required="required" type="text" id="email" name="email"/><br>
-           <label>Password</label><input  required="required" type="password" id="password" name="password"/><br>
-           <label>Password(verify)</label><input  required="required" type="password" id="verify"  name="verify" onchange='checkpassword();'/><br>
-                   
-       
-       </fieldset>
-           <input type="submit" name="Sign Up" value="Sign Up" onclick="return checkpassword()" />
+            <form class="welcome">
+                    <div class="form-group row">
+                        <div class="col-sm-4">
+                    <h1 class="webtypeface">TechHire.com</h1>
+                    <h5>Sign up to create a job seeker account</h5>
+                    </div>
+                    </div>
+
+            <div class="form-group row">
+                <label for="firstname" class="col-sm-1 col-form-label">First name</label>
+                <div class="col-sm-3">
+                    <input required="required" type="text" id="firstname" name="fname"  class="form-control"/>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <lable for="lastname" class="col-sm-1 col-form-label">Last name</lable>
+                <div class="col-sm-3">
+                    <input  required="required" type="text" id="lastname" name="lname" class="form-control"/>
+                </div>
+            </div>
+
+            <div class="form-group row ">
+                <label for="email" class="col-sm-1 col-form-label">Email Address</label>
+                <div class="col-sm-3">
+                    <input  required="required" type="text" id="email" name="email" class="form-control"/>
+                </div>
+            </div>
+
+            <div class="form-group row ">
+                <label for="password" class="col-sm-1 col-form-label">Password</label>
+                <div class="col-sm-3">
+                        <input  required="required" type="password" id="password" name="password" class="form-control"/>
+                </div>
+           </div>
+
+            <div class="form-group row ">
+                <label for="verify" class="col-sm-1 col-form-label">Password (Verify)</label>
+                <div class="col-sm-3">
+                        <input  required="required" type="password" id="verify" name="verify" onchange='checkpassword()' class="form-control"/>
+                </div>
+            </div>
+
+            <div class="form-group row ">
+                <div class="col-sm-4">
+                <input class="btn btn-primary nologinbtn btn-block" type="submit" name="Sign Up" value="Sign Up" onclick="return checkpassword()" />
+                </div>
+            </div>
+
+            <div class="form-group row ">
+                    <div class="col-sm-4">
+                    <input class="btn btn-primary nologinbtn btn-block" type="submit" name="Log In" value="Already have an account? Log In" method="GET" action="LogIn.html" />
+                    </div>
+            </div>
+    </form>
     </body>
 
    <script>
