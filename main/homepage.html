@@ -1,0 +1,48 @@
+<!--Linh created HTML + Boostrap-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TechHire.com</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style1.css" />
+    </head>
+
+    <body>
+        <!--Navigation Bar: search box, view my profile button, log out button-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="homepage.html"><strong>TechHire.com</strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2 " name="searchenterjobtitlecompany" type="search" placeholder="Job Title/ Position" aria-label="Search" id="seachjob">
+                        <button class="btn btn-primary my-2 my-sm-0 nologinbtn" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav ml-auto">
+                    <li class="nav-item pl-2">
+                        <input class="btn btn-primary nologinbtn" type="logout" id="logout1" onclick="return results();" value="View My Profile"/>
+                    </li>
+                    <li class="nav-item pl-2">
+                        <input class="btn btn-primary nologinbtn" type="logout" id="logout1" onclick="return results();" value="Log out"/>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+
+
+        <div class="welcome">
+        <h1 class=" webtypeface">Welcome to TechHire.com!</h1>
+        <a class="btn btn-primary homapagebtn" href="jobseeker-nologin.html" role="button">I am a job seeker.</a>
+        <br>
+        <a class="btn btn-primary homapagebtn" href="EmployersCreateAccount.html" role="button">I am an employer.</a>
+        </div>
+    </body>
+</html>

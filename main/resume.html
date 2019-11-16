@@ -1,0 +1,128 @@
+<!--Chenyi-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TechHire.com - My Profile</title>
+        <script type="text/javascript" src="external.js"></script>
+                
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/style1.css" />
+    </head>
+
+    <body>
+        <!--Navigation Bar: search box, view my profile button, log out button-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="homepage.html"><strong>TechHire.com</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+              
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2 " name="searchenterjobtitlecompany" type="search" placeholder="Job Title/ Position" aria-label="Search" id="seachjob">
+                    <button class="btn btn-primary my-2 my-sm-0 nologinbtn" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item pl-2">
+                        <input class="btn btn-primary nologinbtn" type="logout" id="logout1" onclick="return results();" value="Log out"/>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="header" class="p-3">
+            <h2><strong>My Resume</strong></h2>
+        </div>
+        <!--Will need to set a to this form such as resume and save all the inputs-->
+        <fieldest class = "content">
+                <div class="form-group row">
+                        <label for="firstname" class="col-sm-1 col-form-label">First name</label>
+                        <div class="col-sm-1">
+                            <input required="required" type="text" id="firstname" name="fname"  class="form-control"/>
+                        </div>
+                    </div>
+        
+                    <div class="form-group row">
+                        <lable for="lastname" class="col-sm-1  col-form-label">Last name</lable>
+                        <div class="col-sm-1">
+                            <input  required="required" type="text" id="lastname" name="lname" class="form-control"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                            <lable for="DOB" class="col-sm-1 col-form-label">D.O.B</lable>
+                            <div class="col-sm-1">
+                                <input  required="required" type="date" id="DOB" name="DOB" class="form-control"/>
+                            </div>
+                    </div>
+
+                    <div class="form-group row">
+                            <lable for="occupation" class="col-sm-1 col-form-label">Occupation</lable>
+                            <div class="col-sm-1">
+                                <input  required="required" type="text" id="occupation" name="occupation" class="form-control"/>
+                            </div>
+                    </div>
+
+                    <div class="form-group row">
+                            <lable for="experience" class="col-sm-1 col-form-label">Experience</lable>
+                            <div class="col-sm-1">
+                                <textarea cols = "100" rows = "5" id="experience"></textarea>
+                            </div>
+                    </div>
+
+                    <div class="form-group row">
+                            <lable for="education" class="col-sm-1 col-form-label">Education</lable>
+                            <div class="col-sm-1">
+                                <textarea cols = "100" rows = "5" id="education"></textarea>
+                            </div>
+                    </div>
+
+                    <div class="form-group row">
+                            <lable for="skills" class="col-sm-1 col-form-label">Skills</lable>
+                            <div class="col-sm-1">
+                                <input type="checkbox" name="skills" value="HTML"  />HTML<br>
+                                <input type="checkbox" name="skills" value="CSS" />CSS<br>
+                                <input type="checkbox" name="skills" value="JavaScript" />JavaScript<br>
+                                <input type="checkbox" name="skills" value="Java" />Java<br>
+                                <input type="checkbox" name="skills" value="Python" />Python<br>
+                                <input type="checkbox" name="skills" value="React" />React<br>
+                                <input type="checkbox" name="skills" value="Node" />Node<br>
+                                <input type="checkbox" name="skills" value="Microsoft" />Microsoft<br>
+                                <input type="checkbox" name="skills" value="others" />Others<br>
+                                <textarea cols = "100" rows = "2" ></textarea><br>
+                            </div>
+                    </div>
+    
+                    <div class="form-group row">
+                            <lable for="awards" class="col-sm-1 col-form-label">Awards</lable>
+                            <div class="col-sm-1">
+                                <textarea cols = "100" rows = "5" id="awards"></textarea>
+                            </div>
+                    </div>
+
+
+  <!--Here should be a link or ...? I'm not sure about this!I just assume here is a link to let job seekers sumbmit there resume!-->
+    
+            <div class="form-group row">
+                <label class="col-sm-1 col-form-label"></label>
+                    <div class="col-sm-1">
+                        <input class="btn btn-primary nologinbtn" type="submit" id="button" value="Submit"/>
+                    </div>
+            </div>
+        </fieldest>  
+       
+    </body>
+<script>
+    var position;
+	
+    function getCaretPosition() {
+        var ctlTextArea = document.getElementById('textArea');
+        position = ctlTextArea.selectionStart;
+        return position;
+    }
+
+</script>
