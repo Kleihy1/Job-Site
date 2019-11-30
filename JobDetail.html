@@ -1,35 +1,54 @@
-<!--Boom-->
+<!--Boom did HTML
+Linh edited HTML + Boostrap-->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>TechHire.com - Current Available Positions</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="ait618proj.css">
-        <script type="text/javascript" src="external.js"></script>
-    </head>
 
-    <body>
-        <!--Header page-->
-        <!--on my profile needs to be add some function like click and get or post to another page (user's profile page)-->
-        <!--on search and enter city / state needs to be in put search function-->
-        <fieldset class="fieldheader">
-            <div style="text-align:center;">
-        <b>
-            <h1>TechHire.com</h1>
-            <button type="myprofile" value="myprofile" id="myprofile" onclick="return results();"><h3>my profile</h3></button>
-            <label class="header"><h3>Search: </label><input name="searchenterjobtitlecompany" type="text" id="searchjob"/></h3>
-            <label class="header"><h3>Enter city / state: </label><input name="searchentercitystate" type="text" id="searchcitystate"/></h3>
-            <button type="logout" value="logout" id="logout1" onclick="return results();"><h3>Log out</h3></button>
-        </b>
-            </div>
-        <!--put line-->
-        </fieldset>
+        <head>
+                <title>TechHire.com - Position Details</title>
+                <script type="text/javascript" src="external.js"></script>
+                
+                <!-- Required meta tags -->
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+                <!-- Bootstrap CSS -->
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+                <link rel="stylesheet" type="text/css" href="css/style1.css" />
+            </head>
+        
+            <body>
+                <!--Header page
+                View My Profile button: Add functions like (get or post) to direct to another page (user's profile page)
+                Search: add searching functions
+                Filter: add filtering functions-->
+        
+                <!--Navigation Bar: search box, view my profile button, log out button-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="homepage.html"><strong>TechHire.com</strong></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2 " name="searchenterjobtitlecompany" type="search" placeholder="Job Title/ Position" aria-label="Search" id="seachjob">
+                            <button class="btn btn-primary my-2 my-sm-0 nologinbtn" type="submit">Search</button>
+                        </form>
+                        <ul class="navbar-nav ml-auto">
+                        <li class="nav-item pl-2">
+                            <input class="btn btn-primary nologinbtn" type="logout" id="logout1" onclick="return results();" value="View My Profile"/>
+                        </li>
+                        <li class="nav-item pl-2">
+                            <input class="btn btn-primary nologinbtn" type="logout" id="logout1" onclick="return results();" value="Log out"/>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
     
 <br/>
-
-        <fieldset class="fieldbg">
-            <h2>E&CS Setup Crew</h2>
-            <h3>Towson University</h3>
+        <div class="pl-4">
+        <div class="fieldbg">
+            <h2><strong><p>E&CS Setup Crew</p></strong></h2>
             <ul>
             <li>Towson, MD</li>
             <li>Higher Education</li>
@@ -37,32 +56,19 @@
             <li>10,000 - 25,000 employees</li>
             <li>$11.00 per hour</li>
             <li>No on-campus interviews</li>
+            <li>Applications close on September 25th, 2020 at 12:00 pm</li>
                 </ul>
-        </fieldset>
+        </div>
 
-<br/>
-<br/>
-
-        <fieldset class="fieldbg">
-            <b><p>Applications close on September 25th, 2020 at 12:00 pm</p></b>
-            <div style="text-align:right;">
-            <button type="apply" value="apply" id="apply" onclick="return results();"><h3>Apply</h3></button>
-            </div>
-        </fieldset>
-
-<br/>
-<br/>
-
-        <fieldset class="fieldbg">
-            <h2><b><p>Job Description</p></b></h2>
-            <u><b><p>Job Summary:</p></b></u>
+        <div class="fieldbg">
+            <u><strong><p>Job Summary:</p></strong></u>
             <p>The Student Setup Crew position provides support in the setting up and breaking down of all events on campus. This includes day-to-day operations along with special events at various hours.</p>
                 <ul>  
                 <li>Setups include but are not limited to special events, weekly meetings, picnics, fairs, and expo’s</li>
                 <li>Event setup equipment includes tables, chairs, stages, and other event related equipment.</li>
                 <li>Event setup must be completed in a timely fashion. These event set ups may need to be completed in a very short period of time.</li>
                 </ul>  
-            <u><b><p>Minimum Qualifications:</p></b></u>
+            <u><strong><p>Minimum Qualifications:</p></strong></u>
             <ul>
                 <li>Must be able to work in a team environment.</li>
                 <li>Must be able to lift at least 60lbs.</li>
@@ -71,7 +77,7 @@
                 <li>Must be able to learn safety precautions for events.</li>
                 <li>Must be able to use all equipment provided by department.</li>
             </ul>
-            <u><b><p>Special conditions of employment:</p></b></u>
+            <u><strong><p>Special conditions of employment:</p></strong></u>
             <ul>
                 <li>Must be able to work On-Call weekends.</li>
                 <li>Assigned hours may include week days, week nights, and weekends.</li>
@@ -82,10 +88,9 @@
             </ul>
             <u><b><p>Availability:</p></b></u>
             <p>Days, Evenings, Weekends <i>(assigned a specific shift you work every week)</i></p>
-        </fieldset>
-
-<br/>
-<br/>
+            <input class="btn btn-primary nologinbtn" type="button" id="apply" onclick="return results();" value="Apply"/>
+        </div>
+    </div>
 
 
     </body>

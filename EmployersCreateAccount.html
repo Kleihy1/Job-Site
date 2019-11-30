@@ -1,40 +1,114 @@
-<!--Chenyi-->
+<!--Kevin add-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title><h1>TechHire.com</h1> </title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="nologin.css">
-        <h1>TechHire.com</h1> 
-        <p>Already have an account?</p>
-        <form id="payment" method="GET" action="LogIn.html" name="LogIn"></form>
-        <input type="submit" name="Log In" value="Log In"  />
+        <title>TechHire.com</title>
 
-    
+         <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style1.css" />
     </head>
 
     <body>
-        <fieldset class="c">
-            <legend class="b">Sign up as a Employer</legend>
-             <label>Email Address (use your work email)</label><input  required="required" type="text" id="email" name="email"/><br>
-            <label>Password</label><input  required="required" type="password" id="password" name="password"/><br>
-            <label>Password(verify)</label><input  required="required" type="password" id="verify"  name="verify" onchange='checkpassword();'/><br>
-                    
-        
-        </fieldset>
-            <input type="submit" name="Sign Up" value="Sign Up" onclick="return checkpassword()" />
+        <!--Navigation Bar: search box, view my profile button, log out button-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="homepage.html"><strong>TechHire.com</strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2 " name="searchenterjobtitlecompany" type="search" placeholder="Job Title/ Position" aria-label="Search" id="seachjob">
+                        <button class="btn btn-primary my-2 my-sm-0 nologinbtn" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav ml-auto">
+                    <li class="nav-item pl-2">
+                        <input class="btn btn-primary nologinbtn" type="logout" id="logout1" onclick="return results();" value="View My Profile"/>
+                    </li>
+                    <li class="nav-item pl-2">
+                        <input class="btn btn-primary nologinbtn" type="logout" id="logout1" onclick="return results();" value="Log out"/>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+
+            <form class="welcome">
+                    <div class="form-group row">
+                        <div class="col-sm-4">
+                            <h3>Recruiter Account Creation</h3>
+                        </div>
+                    </div>
+
+            <div class="form-group row">
+                <label for="firstname" class="col-sm-1 col-form-label">First name</label>
+                <div class="col-sm-3">
+                    <input required="required" type="text" id="firstname" name="fname"  class="form-control"/>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="lastname" class="col-sm-1 col-form-label">Last name</label>
+                <div class="col-sm-3">
+                    <input  required="required" type="text" id="lastname" name="lname" class="form-control"/>
+                </div>
+            </div>
+
+            <div class="form-group row ">
+                <label for="email" class="col-sm-1 col-form-label">Email Address</label>
+                <div class="col-sm-3">
+                    <input  required="required" type="text" id="email" name="email" class="form-control"/>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="lastname" class="col-sm-1 col-form-label">Organization/Company</label>
+                <div class="col-sm-3">
+                    <input  required="required" type="text" id="organization" name="organization" class="form-control"/>
+                </div>
+            </div>
+
+            <div class="form-group row ">
+                <label for="password" class="col-sm-1 col-form-label">Password</label>
+                <div class="col-sm-3">
+                        <input  required="required" type="password" id="password" name="password" class="form-control"/>
+                </div>
+           </div>
+
+            <div class="form-group row ">
+                <label for="verify" class="col-sm-1 col-form-label">Password (Verify)</label>
+                <div class="col-sm-3">
+                        <input  required="required" type="password" id="verify" name="verify" onchange='checkpassword()' class="form-control"/>
+                </div>
+            </div>
+
+            <div class="form-group row ">
+                <div class="col-sm-4">
+                    <input class="btn btn-primary nologinbtn btn-block" type="submit" name="Sign Up" value="Sign Up" onclick="return checkpassword()" />
+                </div>
+            </div>
+    </form>
+    <div>
+        <div class="col-sm-4">
+            <input class="btn btn-primary nologinbtn btn-block" type="submit" name="Log In" value="Already have an account? Log In" action="jobseeker-nologin.html" />
+        </div>
+    </div>
     </body>
 
-    <script>
-            function checkpassword(){
+   <script>
+           function checkpassword(){
 
-                if (document.getElementById('password').value != document.getElementById('verify').value) {
-        
+               if (document.getElementById('password').value != document.getElementById('verify').value) {
+       
                 alert('ensure passwords match');
-        
-                return false;
-        
-                }  
-        
-        }
-        </script>
+       
+               return false;
+       
+               }  
+       
+       }
+    </script> 
