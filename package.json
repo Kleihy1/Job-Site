@@ -1,0 +1,11 @@
+{
+    "name": "techhire-app",
+    "version": "1.0.2",
+    "description": "Techhire App Project",
+    "main": "server.js",
+    "scripts": {
+        "test": "None"
+    },
+    "author": "Kevin Leihy, Chenyi Liu, Linh Huynh, Jirasin Boom Wankijcharoen",
+    "license": "ISC"
+}
