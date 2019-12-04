@@ -35,7 +35,10 @@ module.exports = {
                 renderHTML('./JobDetail.html', response);
                 break;
             case '/resume.html':
-            renderHTML('./resume.html', response);
+                renderHTML('./resume.html', response);
+                break;
+            case '/EmployersCreateAccount.html':
+                renderHTML('./EmployersCreateAccount.html', response);
                 break;
             default:
                 response.writeHead(404);
