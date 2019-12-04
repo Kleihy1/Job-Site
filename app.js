@@ -20,9 +20,6 @@ module.exports = {
         var path = url.parse(request.url).pathname;
         switch (path) {
             case '/':
-                renderHTML('./homepage.html', response)
-                break;
-            case '/homepage.html':
                 renderHTML('./homepage.html', response);
                 break;
             case '/jobseeker-nologin.html':
